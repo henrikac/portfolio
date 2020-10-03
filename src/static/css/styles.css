@@ -1,0 +1,23 @@
+/* Custom CSS */
+
+i.fa {
+	position: relative;
+	width: 0 auto;
+	top: 30vh;
+	transition: 0.4s ease;
+}
+
+i.fa:hover {
+	color: rgb(52, 58, 64);
+	background-color: #fff;
+	border-color: rgb(52, 58, 64);
+	cursor: pointer;
+}
+
+/*
+ * changing color of the navbar-toggler-icon to rgb(52, 58, 64)
+*/
+
+.navbar-white .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(52, 58, 64)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
