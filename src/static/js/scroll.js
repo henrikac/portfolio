@@ -1,5 +1,7 @@
+const navbarBrand = document.querySelector('.navbar-brand');
 const arrowLink = document.querySelector('#arrow');
 const navLinks = document.querySelectorAll('.nav-link');
+const homeSection = document.querySelector('#home');
 const aboutSection = document.querySelector('#about');
 
 const addScrollEvent = (from, to) => {
@@ -10,6 +12,7 @@ const addScrollEvent = (from, to) => {
 	});
 };
 
+addScrollEvent(navbarBrand, homeSection);
 addScrollEvent(arrowLink, aboutSection);
 
 navLinks.forEach(navLink => {
