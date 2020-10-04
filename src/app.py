@@ -19,8 +19,16 @@ def index():
             'Software development',
             'Machine learning',
             'Artificial intelligence',
-            'Outer space']
-    repos = gh.get_user().get_repos()
+    ]
+    repo_names = [
+            'npy',
+            'SocialBots',
+            'MoodleScheduleScraper',
+            'JokeScraper',
+            'P2Bot',
+            'ThePeriodicTable',
+    ]
+    repos = [repo for repo in gh.get_user().get_repos() if repo.name in repo_names]
 
     return render_template('index.html', now=now, repos=repos, interests=interests)
 
