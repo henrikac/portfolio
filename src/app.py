@@ -22,6 +22,17 @@ def index():
             'Task automation',
             'Data mining'
     ]
+    skills = [
+            'HTML/CSS',
+            'Bootstrap',
+            'JavaScript',
+            'Python',
+            'C/C++',
+            'C#/.NET Core',
+            'SQL',
+            'Git',
+            'Heroku'
+    ]
     repo_names = [
             'npy',
             'SocialBots',
@@ -32,5 +43,9 @@ def index():
     ]
     repos = [repo for repo in gh.get_user().get_repos() if repo.name in repo_names]
 
-    return render_template('index.html', now=now, repos=repos, interests=interests)
+    return render_template('index.html',
+                            now=now,
+                            repos=repos,
+                            interests=interests,
+                            skills=skills)
 
