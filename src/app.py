@@ -19,6 +19,8 @@ def index():
             'Software development',
             'Machine learning',
             'Artificial intelligence',
+            'Task automation',
+            'Data mining'
     ]
     repo_names = [
             'npy',

@@ -53,9 +53,9 @@
 		<div class="container mb-5">
 			<div id="about" class="row pt-5 min-vh-100">
 				<div class="col-md-6 mx-auto pt-5 mt-5">
-					<h2 class="text-center">Who is this guy?</h2>
+					<h2 class="text-center text-dark">Who is this guy?</h2>
 					<hr class="mt-3 mb-4 w-25 bg-dark">
-					<p>
+					<p class="text-dark">
 					Computer science student from Hjørring, Denmark.<br/>
 					I am super passionate about making software and trying new technologies.<br/>
 					My favorite types of projects are web scrapers and task automation.<br/>
@@ -67,11 +67,11 @@
 				</div>
 
 				<div class="col-md-4 offset-md-1 pt-5 mt-5">
-					<h2 class="text-center">Interests</h2>
+					<h2 class="text-center text-dark">Interests</h2>
 					<hr class="mt-3 mb-4 w-25 bg-dark">
 					<ul class="list-unstyled text-center">
 						{% for interest in interests %}
-							<li>{{ interest }}</li>
+							<li class="text-dark">{{ interest }}</li>
 						{% endfor %}
 					</ul>
 				</div>
@@ -88,14 +88,16 @@
 						<hr class="mt-3 mb-4 w-25 bg-white">
 						<p class="text-white">
 							As mentioned before, I really love to make web scrapers and task automation.<br/>
-							One of the more interesting projects that I have done is <strong>SocialBots</strong>. I made this project as an experiment to see if I would get more followers on Instagram if I just liked a bunch of random photos. I was not interested in finding and liking all the photos myself so I decided to automate this task using <a href="https://selenium-python.readthedocs.io/" target="_blank" class="text-white"><strong>Selenium</strong></a>. The project turned out to be a success because the more photos my bot liked the more followers I got.<br/>
-							Another fun project that I have made is <strong>npy</strong>.
-							npy is a bash script that helps me setup a new Python project with e.g. a README, git and a virtual environment.<br/><br/>
-							I have included a few JavaScript projects that I made during my time on <a href="https://www.freecodecamp.org/" target="_blank" class="text-white"><strong>FreeCodeCamp</strong></a>.
-							The JavaScript projects are all on <a href="https://codepen.io/" target="_blank" class="text-white"><strong>CodePen</strong></a>.
+							One of the more interesting projects that I have done is my Instagram bot (SocialBots).
+							I made this project as an experiment to see if I would get more followers on Instagram if I just liked a bunch of random photos.
+							I was not interested in finding and liking all the photos myself so I decided to automate this task using <a href="https://selenium-python.readthedocs.io/" target="_blank" class="text-white"><strong>Selenium</strong></a>.
+							The project turned out to be a success because the more photos my bot liked the more followers I got.<br/><br/>
+
+							I created a few JavaScript projects while following the curriculum on <a href="https://www.freecodecamp.org/" target="_blank" class="text-white"><strong>FreeCodeCamp</strong></a>.
+							Those projects of course varied in difficulty, from simple animations to fetching data from an API. The most difficult project, in my opinion, was the Simon Game - not because of the JavaScript but because of the styling part.
 						</p>
 					</div>
-					<div class="col-md-3 offset-md-1">
+					<div class="col-md-5 col-lg-3 offset-lg-1 mt-4 mt-sm-0">
 						<h2 class="text-center text-white">GitHub Projects</h2>
 						<hr class="mt-3 mb-4 w-25 bg-white">
 						<ul class="list-unstyled text-center">
@@ -110,7 +112,7 @@
 					</div>
 				</div>
 				<div class="row mt-5">
-					<div class="col-md-4 offset-md-1 card bg-white pb-3">
+					<div class="col-md-4 offset-md-1 card bg-white pb-3 mt-4 mt-sm-0">
 						<a href="https://codepen.io/regnis/full/OvjrZe" target="_blank" class="text-dark">
 							<div class="card-body">
 								<h5 class="card-title font-weight-bold">Calculator</h5>
@@ -123,7 +125,7 @@
 							https://assets.codepen.io/537247/internal/screenshots/pens/OvjrZe.default.png?fit=cover&amp;format=auto&amp;ha=false&amp;height=720&amp;quality=75&amp;v=2&amp;version=1522060252&amp;width=1279 1279w">
 						</a>
 					</div>
-					<div class="col-md-4 offset-md-2 card bg-white pb-3">
+					<div class="col-md-4 offset-md-2 card bg-white pb-3 mt-4 mt-sm-0">
 						<a href="https://codepen.io/regnis/full/XEyJwR" target="_blank" class="text-dark">
 							<div class="card-body">
 								<h5 class="card-title font-weight-bold">Simon Game</h5>
@@ -137,8 +139,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="row mt-5">
-					<div class="col-md-4 offset-md-1 card bg-white pb-3">
+				<div class="row">
+					<div class="col-md-4 offset-md-1 card bg-white pb-3 mt-4 mt-sm-5">
 						<a href="https://codepen.io/regnis/full/aYBOME" target="_blank" class="text-dark">
 							<div class="card-body">
 								<h5 class="card-title font-weight-bold">Twitch Streamers</h5>
@@ -151,7 +153,7 @@
 							https://assets.codepen.io/537247/internal/screenshots/pens/aYBOME.default.png?fit=cover&amp;format=auto&amp;ha=true&amp;height=720&amp;quality=75&amp;v=2&amp;version=1521392615&amp;width=1279 1279w">
 						</a>
 					</div>
-					<div class="col-md-4 offset-md-2 card bg-white pb-3">
+					<div class="col-md-4 offset-md-2 card bg-white pb-3 mt-4 mt-sm-5">
 						<a href="https://codepen.io/regnis/full/GxyVyM" target="_blank" class="text-dark">
 							<div class="card-body">
 								<h5 class="card-title font-weight-bold">Pomodoro Clock</h5>
@@ -169,6 +171,36 @@
 		</div>
 
 		<footer class="container-fluid bg-white py-2">
+			<div class="row pt-3">
+				<div class="col-10 mx-auto">
+					<ul class="list-inline text-center">
+						<li class="list-inline-item">
+							<a href="https://twitter.com/henrikabel" target="_blank" class="text-dark">
+								<span class="fa-stack fa-lg">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://github.com/henrikac" target="_blank" class="text-dark">
+								<span class="fa-stack fa-lg">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://codepen.io/regnis" target="_blank" class="text-dark">
+								<span class="fa-stack fa-lg">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fab fa-codepen fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<p class="text-center text-dark pt-2">&copy; {{ now.year }} Henrik Abel Christensen</p>
 		</footer>
 
