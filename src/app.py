@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from github import Github
-from flask import Flask, render_template
+from flask import Flask, redirect, render_template
 
 from src.settings import ACCESS_TOKEN
 
@@ -10,6 +10,14 @@ app = Flask(__name__)
 
 
 gh = Github(ACCESS_TOKEN)
+
+
+@app.before_request
+def enforce_https():
+    if request.headers.get('X-Forwarded-Proto') == 'http':
+        url = request.url.replace('http://', 'https://', 1)
+        code = 301
+        return redirect(url, code=code)
 
 
 @app.route('/')
