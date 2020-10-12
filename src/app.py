@@ -3,7 +3,7 @@ from datetime import datetime
 from github import Github
 from flask import Flask, render_template
 
-from settings import ACCESS_TOKEN
+from src.settings import ACCESS_TOKEN
 
 
 app = Flask(__name__)
@@ -48,8 +48,4 @@ def index():
                             repos=repos,
                             interests=interests,
                             skills=skills)
-
-
-if __name__ == '__main__':
-    app.run()
 
