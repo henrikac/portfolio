@@ -49,3 +49,7 @@ def index():
                             interests=interests,
                             skills=skills)
 
+
+if __name__ == '__main__':
+    app.run()
+
