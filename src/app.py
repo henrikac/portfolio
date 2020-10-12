@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from github import Github
-from flask import Flask, redirect, render_template
+from flask import Flask, redirect, request, render_template
 
 from src.settings import ACCESS_TOKEN
 
